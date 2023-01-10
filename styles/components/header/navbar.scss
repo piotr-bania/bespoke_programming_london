@@ -1,0 +1,128 @@
+@import '/styles/globals';
+
+#navbar {
+    .wrapper {
+        position: fixed;
+        display: grid;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+
+        .logo {
+            cursor: pointer;
+            position: fixed;
+
+            .logo_center {
+                position: absolute;
+                top: 0;
+                left: 0;
+                fill: #8a3ffc;
+                mix-blend-mode: multiply;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .logo_top {
+                position: absolute;
+                top: 3px;
+                left: 10px;
+                fill: #ad3ffc;
+                mix-blend-mode: multiply;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .logo_bottom {
+                position: absolute;
+                top: 14px;
+                left: 15px;
+                fill: #d02670;
+                mix-blend-mode: multiply;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+
+                .logo_center {
+                    top: 0px;
+                    left: 8px;
+                }
+
+                .logo_top {
+                    top: 11px;
+                    left: -10px;
+                    rotate: -180deg;
+                }
+
+                .logo_bottom {
+                    top: 11px;
+                    left: 35px;
+                }
+            }
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            background: $gradientBackground;
+            backdrop-filter: blur(15px);
+
+            li {
+                a {
+                    padding: 0 1vw;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+    #navbar {
+        .wrapper {
+            width: calc(100% - 10vw);
+            margin: 5vh 5vw;
+
+            .logo {
+                top: 5vh;
+                left: 5vw;
+            }
+        }
+    }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768) and (max-width: 1023px) {
+    #navbar {
+        .wrapper {
+            width: calc(100% - 8vw);
+            margin: 4vh 4vw;
+
+            .logo {
+                top: 4vh;
+                left: 4vw;
+            }
+        }
+    }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    #navbar {
+        .wrapper {
+            width: calc(100% - 6vw);
+            margin: 3vh 3vw;
+
+            .logo {
+                top: 3vh;
+                left: 3vw;
+            }
+        }
+
+        nav.menu li {
+            display: none;
+        }
+    }
+}
