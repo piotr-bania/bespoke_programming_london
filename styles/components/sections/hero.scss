@@ -28,21 +28,45 @@
         div {
             display: flex;
             align-items: flex-end;
+
+            p {
+                font-size: calc($paragraph - 2px);
+            }
         }
 
-        @keyframes blink{
-            0%{opacity: 0.05;}
-            10%{opacity: 0.1;}
-            45%{opacity: 0.95;}
-            50%{opacity: 1;}
-            55%{opacity: 0.95;}
-            90%{opacity: 0.1;}
-            100%{opacity: 0.05;}
+        @keyframes blink {
+            0% {
+                opacity: 0.05;
             }
 
-        p {
-            padding-right: 10px;
+            10% {
+                opacity: 0.1;
+            }
+
+            45% {
+                opacity: 0.95;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            55% {
+                opacity: 0.95;
+            }
+
+            90% {
+                opacity: 0.1;
+            }
+
+            100% {
+                opacity: 0.05;
+            }
         }
+
+        // p {
+        //     padding-right: 10px;
+        // }
 
         &:hover {
             cursor: pointer;
@@ -61,27 +85,27 @@
     #hero {
         .wrapper {
             grid-template-columns: repeat(12, 1fr);
-        height: calc(100vh - 80px);
+            height: calc(100vh - 50px - 5vh);
 
-        .hero_header {
-            top: 20vh;
-            right: 5vw;
-        }
-
-        .hero_subheader {
-            bottom: 10vh;
-            left: 10vw;
-    
-            p {
-                padding-left: 17px;
-                max-width: 480px;
+            .hero_header {
+                top: 20vh;
+                right: 10vw;
             }
-        }
 
-        .hero_scroll {
-            bottom: 5vh;
-            right: 5vw;
-        }
+            .hero_subheader {
+                bottom: 5vh;
+                left: 10vw;
+
+                p {
+                    padding-left: 17px;
+                    max-width: 480px;
+                }
+            }
+
+            .hero_scroll {
+                bottom: 5vh;
+                right: 5vw;
+            }
         }
     }
 }
@@ -91,6 +115,7 @@
     #hero {
         .wrapper {
             grid-template-columns: repeat(8, 1fr);
+            height: calc(100vh - 50px - 9vh);
         }
     }
 }
@@ -100,23 +125,23 @@
     #hero {
         .wrapper {
             grid-template-columns: repeat(6, 1fr);
-            height: calc(100vh - 40px);
-    
+            height: calc(100vh - 50px - 13vh);
+
             .hero_header {
-                top: 30vh;
+                top: 25vh;
                 right: 3vw;
             }
-    
+
             .hero_subheader {
                 bottom: 9vh;
                 left: 3vw;
-        
+
                 p {
                     padding-left: 17px;
                     max-width: 300px;
                 }
             }
-    
+
             .hero_scroll {
                 bottom: 3vh;
                 right: 3vw;

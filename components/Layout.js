@@ -1,14 +1,14 @@
 import Navbar from "./header/Navbar"
+import Strips from "./overlays/Strips"
+import Footer from "./header/Footer"
 
 const Layout = ({children}) => {
     return (
         <div>
             <Navbar />
-            {/*
-            <Strips /> */}
+            <Strips />
             { children }
-            {/*
-            <Footer /> */}
+            <Footer />
         </div>
     )
 }

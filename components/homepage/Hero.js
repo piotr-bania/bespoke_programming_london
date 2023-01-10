@@ -20,7 +20,7 @@ const Hero = () => {
                     <Link href="#my_services">
                         <div>
                             <p>Scroll down</p>
-                            <Image className='arrowDown' src="/svg/triangle_down.svg" alt="arrow down" width={22} height={34} />
+                            {/* <Image className='arrowDown' src="/svg/triangle_down.svg" alt="arrow down" width={22} height={34} /> */}
                         </div>
                     </Link>
                 </div>

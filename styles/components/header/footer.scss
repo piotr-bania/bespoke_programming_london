@@ -1,0 +1,176 @@
+@import '/styles/globals';
+
+.gradient_purple {
+    background: $gradient_purple_faded;
+}
+
+.left_gradient {
+    margin-bottom: 40px;
+    margin-right: 25vw;
+    z-index: 0;
+}
+
+.right_gradient {
+    margin-top: 40px;
+    margin-left: 25vw;
+    z-index: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    color: $dark_grey;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+}
+
+#footer {
+    margin-top: 10vh;
+    .wrapper {
+        display: grid;
+        align-content: flex-end;
+
+        h3,
+        a {
+            font-family: $header_font;
+            font-weight: 700;
+            text-transform: lowercase;
+            color: $white;
+            line-height: 1;
+            opacity: 1;
+            font-size: calc($header_3 - 3px);
+            text-decoration: underline $dark_grey 5px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                text-decoration: underline $purple 5px;
+            }
+        }
+
+        .map {
+            background: $gradient_purple;
+            filter: grayscale(1);
+            border: none;
+            opacity: 0.75;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// ------------------------------ Desktop ------------------------------
+@media screen and (min-width: 1024px) {
+
+    .left_gradient,
+    .right_gradient {
+        height: 10vh;
+    }
+
+    .left_gradient {
+        margin-bottom: 5vh;
+    }
+
+    .right_gradient {
+        margin-top: 5vh;
+    }
+
+    #footer {
+        .wrapper {
+            grid-template-columns: repeat(12, 1fr);
+
+            .footer_email {
+                grid-area: 2 / 5 / 3 / 12;
+                padding-top: 5vh;
+            }
+
+            .footer_telegram {
+                grid-area: 3 / 5 / 4 / 12;
+                padding-top: 5vh;
+            }
+
+            .location {
+                grid-area: 4 / 5 / 5 / 8;
+                padding-top: 5vh;
+            }
+
+            .hours {
+                grid-area: 4 / 8 / 5 / 12;
+                padding-top: 5vh;
+            }
+
+            .map {
+                grid-area: 2 / 1 / 5 / 5;
+                margin-right: 80px;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+// ------------------------------ Tablet ------------------------------
+@media screen and (min-width: 768) and (max-width: 1023px) {
+    #footer {
+        margin-top: 80px;
+    }
+}
+
+// ------------------------------ Smartphone ------------------------------
+@media screen and (max-width: 767px) {
+
+    .left_gradient,
+    .right_gradient {
+        height: 6vh;
+    }
+
+    .left_gradient {
+        margin-bottom: 3vh;
+    }
+
+    .right_gradient {
+        margin-top: 3vh;
+    }
+
+    #footer {
+        .wrapper {
+            grid-template-columns: repeat(6, 1fr);
+            margin-top: 3vh;
+
+            h3 {
+                font-size: 23px;
+                font-family: $header_font;
+                font-weight: 700;
+            }
+
+            .footer_email {
+                grid-area: 1 / 1 / 2 / 7;
+            }
+
+            .footer_telegram {
+                grid-area: 2 / 1 / 3 / 7;
+                padding-top: 3vh;
+            }
+
+            .location {
+                grid-area: 3 / 1 / 4 / 7;
+                padding-top: 3vh;
+            }
+
+            .hours {
+                grid-area: 4 / 1 / 5 / 7;
+                padding-top: 3vh;
+            }
+
+            .map {
+                grid-area: 5 / 1 / 6 / 7;
+                margin-right: 0;
+                margin-top: 3vh;
+                padding: 0;
+            }
+        }
+    }
+}
