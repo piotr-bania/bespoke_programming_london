@@ -1,7 +1,126 @@
 @import '/styles/globals';
 
 #hero {
-    height: calc(100vh - 10vh - 50px);
-    padding-top: 10vh;
+    display: grid;
+
+    .hero_header {
+        position: absolute;
+    }
+
+    .hero_subheader {
+        position: absolute;
+
+        p {
+            padding-left: 17px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    .hero_scroll {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        animation: blink 2s linear infinite;
+
+        div {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        @keyframes blink{
+            0%{opacity: 0.05;}
+            10%{opacity: 0.1;}
+            45%{opacity: 0.95;}
+            50%{opacity: 1;}
+            55%{opacity: 0.95;}
+            90%{opacity: 0.1;}
+            100%{opacity: 0.05;}
+            }
+
+        p {
+            padding-right: 10px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.gradientBorder {
+    background: linear-gradient(180deg, $purple 0%, $magenta 100%);
+    background-size: 3px;
+    background-repeat: no-repeat;
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+    #hero {
+        .wrapper {
+            grid-template-columns: repeat(12, 1fr);
+        height: calc(100vh - 80px);
+
+        .hero_header {
+            top: 20vh;
+            right: 5vw;
+        }
+
+        .hero_subheader {
+            bottom: 10vh;
+            left: 10vw;
     
+            p {
+                padding-left: 17px;
+                max-width: 480px;
+            }
+        }
+
+        .hero_scroll {
+            bottom: 5vh;
+            right: 5vw;
+        }
+        }
+    }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768) and (max-width: 1023px) {
+    #hero {
+        .wrapper {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    #hero {
+        .wrapper {
+            grid-template-columns: repeat(6, 1fr);
+            height: calc(100vh - 40px);
+    
+            .hero_header {
+                top: 30vh;
+                right: 3vw;
+            }
+    
+            .hero_subheader {
+                bottom: 9vh;
+                left: 3vw;
+        
+                p {
+                    padding-left: 17px;
+                    max-width: 300px;
+                }
+            }
+    
+            .hero_scroll {
+                bottom: 3vh;
+                right: 3vw;
+            }
+        }
+    }
 }
