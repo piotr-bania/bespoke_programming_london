@@ -1,0 +1,36 @@
+@import '/styles/globals';
+
+#portfolio {
+    display: grid;
+
+    .wrapper {
+        margin-top: 15vh;
+    }
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+    #portfolio {
+        .wrapper {
+            grid-template-columns: repeat(12, 1fr);
+        }
+    }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768) and (max-width: 1023px) {
+    #portfolio {
+        .wrapper {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    #portfolio {
+        .wrapper {
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}

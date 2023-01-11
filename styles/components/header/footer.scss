@@ -27,7 +27,7 @@ p {
 }
 
 #footer {
-    margin-top: 10vh;
+    margin-top: 5vh;
     .wrapper {
         display: grid;
         align-content: flex-end;
@@ -141,7 +141,7 @@ p {
             margin-top: 3vh;
 
             h3 {
-                font-size: 23px;
+                font-size: calc($header_3 - 0.25rem);
                 font-family: $header_font;
                 font-weight: 700;
             }
