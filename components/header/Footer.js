@@ -1,7 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/dist/client/link'
-import Map from './Map'
 
 const Footer = () => {
     return (

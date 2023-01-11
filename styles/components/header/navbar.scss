@@ -5,6 +5,7 @@
         position: fixed;
         display: grid;
         height: 50px;
+        width: calc(100% - 10vw);
         margin: auto;
         display: flex;
         align-items: center;
@@ -82,7 +83,6 @@
 @media screen and (min-width: 1024px) {
     #navbar {
         .wrapper {
-            width: calc(100% - 10vw);
             margin: 5vh 5vw;
 
             .logo {
@@ -97,12 +97,11 @@
 @media screen and (min-width: 768) and (max-width: 1023px) {
     #navbar {
         .wrapper {
-            width: calc(100% - 8vw);
-            margin: 4vh 4vw;
+            margin: 4vh 5vw;
 
             .logo {
                 top: 4vh;
-                left: 4vw;
+                left: 5vw;
             }
         }
     }
@@ -112,12 +111,11 @@
 @media screen and (max-width: 767px) {
     #navbar {
         .wrapper {
-            width: calc(100% - 6vw);
-            margin: 3vh 3vw;
+            margin: 3vh 5vw;
 
             .logo {
                 top: 3vh;
-                left: 3vw;
+                left: 5vw;
             }
         }
 

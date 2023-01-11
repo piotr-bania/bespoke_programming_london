@@ -162,7 +162,7 @@ section {
     width: 100%;
 
     .wrapper {
-        border: 1px dotted rgba(0, 255, 255, 0.005);
+        border: 1px dotted rgba(0, 255, 255, 0.99);
     }
 }
 
@@ -176,13 +176,13 @@ section {
 /* ------------------------------ Tablet ------------------------------ */
 @media screen and (min-width: 768) and (max-width: 1023px) {
     .wrapper {
-        margin: 4vh 4vw;
+        margin: 4vh 5vw;
     }
 }
 
 /* ------------------------------ Smartphone ------------------------------ */
 @media screen and (max-width: 767px) {
     .wrapper {
-        margin: 3vh 3vw;
+        margin: 3vh 5vw;
     }
 }

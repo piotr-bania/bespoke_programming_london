@@ -11,14 +11,14 @@
         position: absolute;
 
         p {
-            padding-left: 17px;
-            margin-top: 0;
-            margin-bottom: 20px;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
         }
     }
 
     .hero_scroll {
         position: absolute;
+        right: 5vw;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
@@ -64,10 +64,6 @@
             }
         }
 
-        // p {
-        //     padding-right: 10px;
-        // }
-
         &:hover {
             cursor: pointer;
         }
@@ -97,14 +93,12 @@
                 left: 10vw;
 
                 p {
-                    padding-left: 17px;
                     max-width: 480px;
                 }
             }
 
             .hero_scroll {
                 bottom: 5vh;
-                right: 5vw;
             }
         }
     }
@@ -129,22 +123,21 @@
 
             .hero_header {
                 top: 25vh;
-                right: 3vw;
+                right: 5vw;
             }
 
             .hero_subheader {
                 bottom: 9vh;
-                left: 3vw;
+                left: 5vw;
 
                 p {
-                    padding-left: 17px;
                     max-width: 300px;
                 }
             }
 
             .hero_scroll {
                 bottom: 3vh;
-                right: 3vw;
+                right: 5vw;
             }
         }
     }
