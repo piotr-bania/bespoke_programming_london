@@ -16,12 +16,16 @@
 
         form {
             display: grid;
-            gap: 2rem;
+            gap: 5rem;
+
+            h4 {
+                margin: 1rem 0;
+            }
 
             .general_info {
                 display: flex;
-                    flex-direction: column;
-                    margin-top: 2rem;
+                flex-direction: column;
+                margin-top: 2rem;
             }
 
             .budget {
@@ -42,7 +46,7 @@
                     align-self: flex-end;
                 }
             }
-            
+
             input,
             textarea {
                 background: rgba(105, 112, 119, 0.25);
