@@ -35,38 +35,38 @@ const Quote = () => {
 
                         {/* Business Overview */}
                         <label htmlFor="business_overview">Business Overview</label>
-                        <textarea id="business_overview" name="text" placeholder="Business Overview" cols="30" rows="8"></textarea>
+                        <textarea id="business_overview" name="business_overview" placeholder="Business Overview" cols="30" rows="8"></textarea>
 
                         {/* Project Overview */}
                         <label htmlFor="project_overview">Project Overview</label>
-                        <textarea id="project_overview" name="text" placeholder="Project Overview" cols="30" rows="8"></textarea>
+                        <textarea id="project_overview" name="project_overview" placeholder="Project Overview" cols="30" rows="8"></textarea>
                     </div>
 
                     <div className="budget">
                         <h4>What is your Budget?</h4>
 
                         <label htmlFor="budget">What is your budget?</label>
-                        <p><input id="budget" name="radio" type="checkbox"></input> £250 - £499</p>
-                        <p><input id="budget" name="radio" type="checkbox"></input> £500 - £999</p>
-                        <p><input id="budget" name="radio" type="checkbox"></input> £1,000 - £1,499</p>
-                        <p><input id="budget" name="radio" type="checkbox"></input> £1,500 - £2,499</p>
-                        <p><input id="budget" name="radio" type="checkbox"></input> £2,500+</p>
+                        <p><input id="budget_1" name="budget" type="checkbox"></input> £250 - £499</p>
+                        <p><input id="budget_2" name="budget" type="checkbox"></input> £500 - £999</p>
+                        <p><input id="budget_3" name="budget" type="checkbox"></input> £1,000 - £1,499</p>
+                        <p><input id="budget_4" name="budget" type="checkbox"></input> £1,500 - £2,499</p>
+                        <p><input id="budget_5" name="budget" type="checkbox"></input> £2,500+</p>
 
                         <h4>Will your site require regular updates?</h4>
                         <label htmlFor="updates">Any Updates?</label>
-                        <p><input id="updates" name="checkbox" type="radio"></input> Yes</p>
-                        <p><input id="updates" name="checkbox" type="radio"></input> No</p>
+                        <p><input id="updates_yes" name="updates" type="radio"></input> Yes</p>
+                        <p><input id="updates_no" name="updates" type="radio"></input> No</p>
 
                         <h4>Just a few more bits of information</h4>
 
                         {/* Deadline */}
                         <label htmlFor="deadline">Is there a deadline?</label>
-                        <textarea id="deadline" name="text" placeholder="Is there a deadline for the project?" cols="30"
+                        <textarea id="deadline" name="deadline" placeholder="Is there a deadline for the project?" cols="30"
                             rows="3"></textarea>
 
                         {/* Questions */}
                         <label htmlFor="questions">Additional questions</label>
-                        <textarea id="questions" name="text" placeholder="Is there anything else you would like to ask?" cols="30"
+                        <textarea id="questions" name="questions" placeholder="Is there anything else you would like to ask?" cols="30"
                             rows="3"></textarea>
 
                         <button className='button' type="submit" value="Send">Submit</button>

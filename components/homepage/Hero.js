@@ -8,11 +8,11 @@ const Hero = () => {
             <div className="wrapper">
                 
                 <div className="hero_header">
-                    <h1>I Solve Business <br />Problems <br /> Through Medium <br />of Web <br />Development</h1>
+                    <h1>I Solve Business <br />Problems <br /> Through <br /> the Medium <br />of Web <br />Development</h1>
                 </div>
 
                 <div className="hero_subheader">
-                    <p className='gradientBorder'>I am a freelance web developer who builds custom web-applications right from consulting, development, maintenance and support.</p>
+                    <p className='gradientBorder'>I am a web developer who builds custom web applications through consulting, development, maintenance and support.</p>
                     <Link href="/quote"><button className='button'>Get A Free Quote</button></Link>
                 </div>
 
